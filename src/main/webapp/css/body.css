@@ -1,0 +1,57 @@
+@charset "ISO-8859-1";
+
+h3{
+	margin : 6px 5px;
+	font-size : 17px;
+}
+.noti{
+	text-decoration: none;
+    margin-left: 5px;
+    font-size: 16px;
+    margin-bottom : 5px;
+    color : red;
+}
+.banner-image{
+	margin : 0 auto;
+	width : 1300px;
+	height : 350px;
+	margin-top : 20px;
+}
+
+.navigator{
+	bottom : 16px;
+    width: 68px;
+    height: 16px;
+    margin: 0 auto;
+    position : relative;
+}
+
+.dot{
+    cursor: pointer;
+    height: 15px;
+    width: 15px;
+    margin: 0 2px;
+    background-color: #bbb;
+    border-radius: 50%;
+    display: inline-block;
+    transition: background-color 0.6s ease;
+}
+
+.dot:hover {
+  background-color: #717171;
+}
+
+.info{
+	margin : 0 auto;
+	width : 1300px;
+	height : 70px;
+	border : 1px solid blue;
+	margin-bottom : 15px;
+}
+
+.notice{
+	margin : 0 auto;
+	width : 1300px;
+	height : 54px;
+	border : 3px solid #ff0000;
+}

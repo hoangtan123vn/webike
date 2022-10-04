@@ -1,0 +1,65 @@
+.footer{
+	position: absolute;
+	bottom : 0;
+	width : 100%;
+	height : 250px;
+	background-color : #202732;
+}
+
+body{
+	margin : 0px;
+}
+.space{
+	width: 100%;
+    background-color: antiquewhite;
+    height: 30px;
+}
+.contact{
+	width : 100%;
+	height : 186px;
+}
+
+.copyright{
+	width: 100%;
+    line-height: 30px;
+    height: 30px;
+    background-color: black;
+}
+.content{
+	margin: 0 auto;
+    padding: 0;
+    height: 172px;
+    width: 1045px;
+}
+.col{
+	height : 148px;
+	width : 210px;
+	float : left;
+	color : white;
+}
+.col li {
+	margin-top : 10px;
+}
+.title{
+	font-size : 17px;
+}
+.region{
+	float : left;
+}
+
+.title-copyright{
+	float: right;
+	color : white;
+	right : 10px;
+}
+.title-region{
+	color: #333;
+    text-decoration: none;
+    outline: none;
+}
+
+.col li a{
+	text-decoration: none;
+    outline: none;
+    color : white;
+}

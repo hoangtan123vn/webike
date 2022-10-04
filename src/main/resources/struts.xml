@@ -1,0 +1,66 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE struts PUBLIC
+"-//Apache Software Foundation//DTD Struts Configuration 2.5//EN"
+"http://struts.apache.org/dtds/struts-2.5.dtd">
+
+<struts>
+    <constant name="struts.devMode" value="true" />
+	<constant name="struts.objectFactory" value="spring" />
+	<package name="default" extends="struts-default">
+	</package>
+	
+	
+	<package name="action" extends="json-default">
+		<action name="test" class="action.HeaderManagesources">
+			<result name="success" type="json"></result>
+		</action>
+	</package>
+	
+	<package name="headeraction" extends="tiles-default">
+	   <result-types>
+          <result-type name="tiles" 
+               class="org.apache.struts2.views.tiles.TilesResult"/>
+       </result-types>
+       
+        <interceptors>
+       		<interceptor name="HeaderInterceptor" class="interceptor.CustomInterceptor"></interceptor>
+       		<interceptor name="HomeHeaderInterceptor" class="interceptor.HomeHeaderInterceptor"></interceptor>
+       		<interceptor-stack name="getHeader">
+       			<interceptor-ref name="HomeHeaderInterceptor" />
+       		</interceptor-stack>
+       </interceptors>
+       
+       <default-interceptor-ref name="getHeader"/>
+        
+       <action name="header" class="header">
+       		<interceptor-ref name="defaultStack"/>
+       		<result name="success" type="dispatcher">header.jsp</result>
+       	    <interceptor-ref name="scope">
+       			 <param name="key">header</param>
+        		 <param name="session">menus,headers</param>
+                 <param name="autoCreateSession">true</param>
+                 <param name="reset">true</param>
+       		 </interceptor-ref>
+		</action>
+		
+    	 <action name="" class="main">
+			<result name="success" type="tiles" >baseLayout</result>
+		</action>
+		 
+		 <action name="Homepage" class="main" method="pageHomePage">
+			<result name="success" type ="tiles">homePage</result>
+		 </action> 
+		  
+		 <action name="page1" class="action.Page1">
+		 	<interceptor-ref name="defaultStack"/>
+		 	<interceptor-ref name="HeaderInterceptor"/>
+			<result name="success" type ="tiles">homePage1</result>
+		 </action> 
+		  
+		 <action name="page2" class="action.Page2">
+			<result name="success" type ="tiles">homePage2</result>
+		 </action> 
+	</package>
+
+	
+</struts>

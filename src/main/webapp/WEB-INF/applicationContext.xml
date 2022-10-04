@@ -1,0 +1,19 @@
+<beans  xmlns="http://www.springframework.org/schema/beans"
+       xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+       xsi:schemaLocation="
+            http://www.springframework.org/schema/beans
+            http://www.springframework.org/schema/beans/spring-beans.xsd" default-autowire="byName">
+
+    <!-- header1 -->
+    <bean id="header" class="action.HomeHeader"/>
+    
+    <!-- header2 -->
+    <bean id="header1" class="action.Header1" />
+    
+    
+    <bean id="main" class="action.HomeAction">
+    </bean> 
+     
+
+
+</beans>

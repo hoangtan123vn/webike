@@ -1,0 +1,213 @@
+{
+	"headers" : [
+		{
+			"title" : "Shopping",
+			"url" : "http://localhost:8080/webike/shopping", 
+			"image" : "fa fa-shopping-cart"
+		},
+		
+		{
+			"title" : "News",
+			"url" : "http://localhost:8080/webike/news", 
+			"image" : "fa fa-globe"
+		},
+		
+		{
+			"title" : "Magazine",
+			"url" : "http://localhost:8080/webike/magazine", 
+			"image" : "fa fa-book"
+		},
+		
+		{
+			"title" : "Special Deals",
+			"url" : "http://localhost:8080/webike/special-deals", 
+			"image" : "fa fa-tags"
+		},
+		
+		{
+			"title" : "Reviews",
+			"url" : "http://localhost:8080/webike/reviews", 
+			"image" : "fa fa-thumbs-up"
+		},
+		
+		{
+			"title" : "Wholesale",
+			"url" : "http://localhost:8080/webike/whosale", 
+			"image" : "fa fa-archive"
+		},
+		{
+			"title" : "FIM EWC",
+			"url" : "http://localhost:8080/webike/fimewc", 
+			"image" : ""
+		}
+	],
+	
+	"categories" : [
+		{
+			"title" : "Moto",
+			"url" : "http://localhost:8080/webike/categories/moto", 
+			"submenu" : [
+				{
+					"name" : "Honda",
+					"url" : "http://localhost:8080/webike/categories/moto/honda",
+					"sub_name" : [
+						{
+							"name" : "1000c",
+							"url" : "http://localhost:8080/webike/categories/moto/honda/1000c"
+						},
+						{
+							"name" : "751c to 1000c",
+							"url" : "http://localhost:8080/webike/categories/moto/honda/751_1000c"
+						},
+						{
+							"name" : "401c to 701c",
+							"url" : "http://localhost:8080/webike/categories/moto/honda/401_701c"
+						}
+						
+					]
+				},
+				{
+					"name" : "Yamaha",
+					"url" : "http://localhost:8080/webike/categories/moto/yamaha",
+					"sub_name" : [
+						{
+							"name" : "1000c",
+							"url" : "http://localhost:8080/webike/categories/moto/yamaha/1000c"
+						},
+						{
+							"name" : "751c to 1000c",
+							"url" : "http://localhost:8080/webike/categories/moto/yamaha/751_1000c"
+						},
+						{
+							"name" : "401c to 701c",
+							"url" : "http://localhost:8080/webike/categories/moto/yamaha/401_701c"
+						}
+						
+					]
+				},
+				{
+					"name" : "Suzuki",
+					"url" : "http://localhost:8080/webike/categories/moto/suzuki"
+				},
+				{
+					"name" : "Kawasaki",
+					"url" : "http://localhost:8080/webike/categories/moto/kawasaki"
+				}
+			]
+		},
+		
+		{
+			"title" : "Brands",
+			"url" : "http://localhost:8080/webike/categories/brand", 
+			"submenu" : [
+				{
+					"name" : "See All Brands",
+					"url" : "http://localhost:8080/webike/categories/brand"
+				},
+				{
+					"name" : "Honda",
+					"url" : "http://localhost:8080/webike/categories/brand/honda"
+				},
+				{
+					"name" : "Yamaha",
+					"url" : "http://localhost:8080/webike/categories/brand/yamaha"
+				},
+				{
+					"name" : "Suzuki",
+					"url" : "http://localhost:8080/webike/categories/brand/suzuki"
+				},
+				{
+					"name" : "Kawasaki",
+					"url" : "http://localhost:8080/webike/categories/brand/kawasaki"
+				}
+			]
+		},
+		
+		{
+			"title" : "OEM Parts",
+			"submenu" : [
+				{
+					"name" : "Honda"
+			
+				},
+				{
+					"name" : "Yamaha"
+				},
+				{
+					"name" : "Suzuki"
+				},
+				{
+					"name" : "Kawasaki"
+				}
+			]
+		},
+		
+		{
+			"title" : "Motocycle Parts",
+			"submenu" : [
+				{
+					"name" : "Body Works"
+				},
+				{
+					"name" : "Engine Parts"
+				},
+				{
+					"name" : "Intake Parts"
+				},
+				{
+					"name" : "Foot Controls"
+				}
+			]
+		},
+		
+		{
+			"title" : "Motocycle Gear",
+			"submenu" : [
+				{
+					"name" : "Pants"
+				},
+				{
+					"name" : "Gloves"
+				}
+			]
+		},
+		
+		{
+			"title" : "Helmets",
+			"submenu" : [
+				{
+					"name" : "Full Face Helmets"
+				},
+				{
+					"name" : "Open Face Helmets"
+				}
+			]
+		},
+		{
+			"title" : "Accessories",
+			"submenu" : [
+				{
+					"name" : "Security"
+				},
+				{
+					"name" : "Others"
+				}
+			]
+		},
+		
+		{
+			"title" : "Tools",
+			"submenu" : [
+				{
+					"name" : "Tool Sets"
+				},
+				{
+					"name" : "Hand tools"
+				}
+			]
+		}
+	]
+	
+	
+	
+}
